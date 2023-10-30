@@ -6,8 +6,8 @@ const GradientCursor = () => {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setPosition({
-        left: e.pageX - 400, // 800px / 2
-        top: e.pageY - 400, // 800px / 2
+        left: e.pageX - 500, // 1000px / 2
+        top: e.pageY - 500, // 1000px / 2
       });
     };
 
@@ -25,8 +25,8 @@ const GradientCursor = () => {
         zIndex: -100,
         left: `${position.left}px`,
         top: `${position.top}px`,
-        width: "800px",
-        height: "800px",
+        width: "1000px",
+        height: "1000px",
         overflow: "hidden", // Apply overflow to the cursor itself
       }}
     >
@@ -34,7 +34,7 @@ const GradientCursor = () => {
         className="glow w-[100%] h-[100%] absolute"
         style={{
           background:
-            "radial-gradient(circle, rgb(16,30,64) 5%, rgba(255,255,255,0) 70%)",
+            "radial-gradient(circle, rgb(16,30,64) 0%, rgba(255,255,255,0) 70%)",
         }}
       ></div>
     </div>
