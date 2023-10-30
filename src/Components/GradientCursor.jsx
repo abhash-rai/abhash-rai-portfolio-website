@@ -20,17 +20,24 @@ const GradientCursor = () => {
 
   return (
     <div
-      className="glow z-[-100]"
       style={{
+        position: "fixed", // Use fixed position
+        zIndex: -100,
         left: `${position.left}px`,
         top: `${position.top}px`,
-        height: "800px",
         width: "800px",
-        background:
-          "radial-gradient(circle, rgb(16,30,64) 5%,  rgba(255,255,255,0) 70%)",
-        position: "absolute",
+        height: "800px",
+        overflow: "hidden", // Apply overflow to the cursor itself
       }}
-    ></div>
+    >
+      <div
+        className="glow w-[100%] h-[100%] absolute"
+        style={{
+          background:
+            "radial-gradient(circle, rgb(16,30,64) 5%, rgba(255,255,255,0) 70%)",
+        }}
+      ></div>
+    </div>
   );
 };
 

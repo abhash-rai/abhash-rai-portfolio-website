@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App h-[200vh]">
       <GradientCursor />
-      <div className="h-[200vh]">
+      <div className="h-[200vh] z-[1]">
         <StickyBoxComponent />
       </div>
     </div>

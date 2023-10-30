@@ -8,13 +8,13 @@ const StickyBoxComponent = () => {
   });
 
   return (
-    <div className="sticky_box z-[1] w-full h-full flex flex-col sm:flex-row sm:items-start">
-      <div className="w-full sm:w-[40vw] sm:h-full">
-        <div className="sidebar w-full relative sm:sticky" ref={ref}>
+    <div className="sticky_box w-full h-full flex flex-col sm:flex-row sm:items-start">
+      <div className="w-[100vw] sm:w-[40vw] sm:h-[100vh]">
+        <div className="sidebar w-full sm:sticky" ref={ref}>
           Sidebar
         </div>
       </div>
-      <div className="w-full h-full sm:w-[60vw] ">Content</div>
+      <div className="w-[100vw] h-full sm:w-[60vw]">Content</div>
     </div>
   );
 };
