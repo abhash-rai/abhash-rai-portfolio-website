@@ -1,5 +1,6 @@
 import React from "react";
 import { useStickyBox } from "react-sticky-box";
+import Sidebar from "./Sidebar";
 
 const StickyBoxComponent = () => {
   const ref = useStickyBox({
@@ -8,13 +9,13 @@ const StickyBoxComponent = () => {
   });
 
   return (
-    <div className="sticky_box w-full h-full flex flex-col sm:flex-row sm:items-start">
-      <div className="w-[100vw] sm:w-[40vw] sm:h-full">
-        <div className="sidebar w-full sm:sticky" ref={ref}>
-          Sidebar
+    <div className="sticky_box w-full h-full flex flex-col items-center lg:flex-row lg:items-start">
+      <div className="w-[100vw] lg:w-[40vw] lg:h-full">
+        <div className="sidebar w-full h-full lg:h-[100vh] lg:sticky" ref={ref}>
+          <Sidebar />
         </div>
       </div>
-      <div className="w-[100vw] h-full sm:w-[60vw]">Content</div>
+      <div className="w-[100vw] h-full lg:w-[60vw]">Content</div>
     </div>
   );
 };
