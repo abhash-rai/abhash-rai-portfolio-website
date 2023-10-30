@@ -5,10 +5,10 @@ const GradientCursor = () => {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({
-        left: e.pageX - 500, // 1000px / 2
-        top: e.pageY - 500, // 1000px / 2
-      });
+      const cursorSize = 1000; // The size of your cursor element
+      const left = e.pageX - cursorSize / 2;
+      const top = e.pageY - cursorSize / 2 - window.scrollY;
+      setPosition({ left, top });
     };
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -16,7 +16,7 @@ const GradientCursor = () => {
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []); // Empty dependency array ensures the effect runs only once
+  }, []);
 
   return (
     <div

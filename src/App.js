@@ -6,8 +6,10 @@ import MainContext from "./Components/MainContext";
 function App() {
   const main_title_classes = "font-bold text-[40px] sm:text-5xl xl:text-5xl";
   const headings_classes = "font-normal text-xl xl:text-2xl";
-  const normal_classes = "font-normal text-[16px] xl:text-[16px]";
-  const gray_color = "opacity-70";
+  const normal_classes = "font-normal text-[17px]";
+  const gray_color = "text-[#8092b5]";
+  const text_hover_classes =
+    "hover:text-[#45DBE2] transition-all duration-300 ease-in-out";
 
   return (
     <MainContext.Provider
@@ -16,11 +18,12 @@ function App() {
         headings_classes,
         normal_classes,
         gray_color,
+        text_hover_classes,
       }}
     >
       <div className="App container mx-auto h-[200vh]">
         <GradientCursor />
-        <div className="h-[200vh] z-[1]">
+        <div className="h-full z-[1]">
           <StickyBoxComponent />
         </div>
       </div>
