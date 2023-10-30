@@ -1,4 +1,3 @@
-import { createContext } from "react";
 import "./App.css";
 import GradientCursor from "./Components/GradientCursor";
 import StickyBoxComponent from "./Components/StickyBoxComponent";
