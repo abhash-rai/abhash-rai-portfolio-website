@@ -39,14 +39,14 @@ const projects = [
 ];
 
 const Projects = () => {
-  const { normal_classes, gray_color } = useContext(MainContext);
+  const { normal_classes, small_classes, gray_color } = useContext(MainContext);
   return (
-    <div className={`${normal_classes} flex flex-col gap-16`}>
+    <div className={`${small_classes} flex flex-col gap-16 lg:gap-5`}>
       <div className="text-left lg:hidden font-bold">PROJECTS</div>
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-10 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
+          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-5 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
         >
           <div className="w-full sm:w-[30%] text-[14px] text-left">
             <img
@@ -56,7 +56,9 @@ const Projects = () => {
             />
           </div>
           <div className="w-full sm:w-[70%] flex flex-col gap-4">
-            <div className="projects_titles text-left font-semibold text-white">
+            <div
+              className={`${normal_classes} projects_titles text-left font-semibold text-white`}
+            >
               {project.ProjectName}
             </div>
             <div className="text-left">{project.ProjectDescription}</div>
@@ -71,7 +73,9 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <div className="p-2 bg-[#1c3751] shadow-md text-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out">
+            <div
+              className={`${normal_classes} p-2 bg-[#1c3751] shadow-md text-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out`}
+            >
               <a
                 className="w-full h-full"
                 href={project.ProjectLink}
