@@ -13,14 +13,8 @@ const StickyBoxComponent = () => {
 
   return (
     <div className="sticky_box w-full flex justify-start flex-col items-center lg:flex-row lg:justify-center lg:items-start">
-      <div className="w-[100vw] lg:w-[45vw]" ref={ref}>
+      <div className="w-[100vw] lg:w-[45vw] !relative lg:!sticky" ref={ref}>
         <Sidebar />
-        {/* <div
-          className=""
-          ref={ref}
-        >
-          
-        </div> */}
       </div>
       <div className="content flex flex-col gap-36 w-[100vw] px-[50px] py-24 lg:pl-6 lg:pr-18 xl:pl-18 xl:pr-20 lg:w-[55vw]">
         <AboutMe />
