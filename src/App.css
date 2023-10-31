@@ -16,10 +16,6 @@
   /* border: 1px solid red; */
 }
 
-.sticky_box div, .content div {
-  /* border: 1px solid red; */
-}
-
 @media (min-width: 1023px) { 
   .experience_cards:hover .experience_titles, .projects_cards:hover .projects_titles {
     color: #45DBE2;

@@ -1,9 +1,31 @@
 import { useContext } from "react";
 import MainContext from "./MainContext";
 
+import TrafficImageClassifier from "../Project_banners/traffic_image_classifier.png";
 import FaceRecognitionAttendanceSystemImage from "../Project_banners/face_recognition_attendance_system.png";
 
 const projects = [
+  {
+    ProjectImage: TrafficImageClassifier,
+    ProjectName: "Traffic Image Classifier",
+    ProjectDescription:
+      "A web-based solution for precise traffic condition classification, leveraging machine learning techniques, including Convolutional Neural Network and Transfer Learning (Xception), delivering 95% accuracy in discerning traffic scenarios.  It encompasses a comprehensive workflow, from Data Collection (Manual, Web Scrapping), EDA, Data Augmentation, Model Training (ML Algorithms, CNN, Transfer Learning), Hyperparameter Tuning, Model Validation, and Deployment (UI Design, React and FastAPI).",
+    TechnologiesUsed: [
+      "Python",
+      "Keras (Tensorflow)",
+      "scikit-learn",
+      "Matplotlib",
+      "OpenCV",
+      "Pandas",
+      "FastAPI",
+      "Figma",
+      "ReactJs",
+      "HTML",
+      "CSS",
+    ],
+    ProjectLink: "https://github.com/abhash-rai/",
+    ProjectLinkPlatform: "Github",
+  },
   {
     ProjectImage: FaceRecognitionAttendanceSystemImage,
     ProjectName: "Face Recognition Attendance System",
@@ -24,13 +46,13 @@ const Projects = () => {
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-5 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
+          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-10 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
         >
           <div className="w-full sm:w-[30%] text-[14px] text-left">
             <img
               src={project.ProjectImage}
               alt={project.ProjectName}
-              className="w-full shadow-sm"
+              className="w-full shadow-md border-[#242D3E] border-2 rounded-md"
             />
           </div>
           <div className="w-full sm:w-[70%] flex flex-col gap-4">

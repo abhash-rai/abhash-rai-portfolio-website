@@ -33,10 +33,10 @@ const Experience = () => {
           key={index}
           className={`${gray_color} experience_cards flex flex-col sm:flex-row gap-5 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
         >
-          <div className="w-full sm:w-[30%] text-[14px] text-left">
+          <div className="w-full sm:w-[35%] text-[14px] text-left">
             {experience.StartDate} — {experience.EndDate}
           </div>
-          <div className="w-full sm:w-[70%] flex flex-col gap-4">
+          <div className="w-full sm:w-[65%] flex flex-col gap-4">
             <div className="experience_titles text-left font-semibold text-white">
               {experience.JobTitle} • {experience.JobCompany}
             </div>
@@ -57,7 +57,7 @@ const Experience = () => {
       <a
         href={MyResume}
         download
-        className="flex justify-start items-center font-semibold"
+        className="flex justify-start items-center font-semibold  p-0 lg:px-6"
       >
         <button>Download My Resume →</button>
       </a>
