@@ -5,7 +5,11 @@ const AboutMe = () => {
   const { normal_classes, gray_color, text_hover_classes } =
     useContext(MainContext);
   return (
-    <div className={`${normal_classes} font-semibold flex flex-col gap-5`}>
+    <div
+      data-aos="fade-up"
+      data-aos-delay={950}
+      className={`${normal_classes} font-semibold flex flex-col gap-5`}
+    >
       <div className="text-left lg:hidden">ABOUT</div>
       <div
         className={`${normal_classes} ${gray_color} flex flex-col gap-5 p-0 lg:px-5`}

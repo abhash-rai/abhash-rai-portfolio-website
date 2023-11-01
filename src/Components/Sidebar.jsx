@@ -11,17 +11,25 @@ const logos = [
     image: LinkedinLogo,
     alt: "LinkedIn",
     link: "https://www.linkedin.com/in/abhash-rai/",
+    aosDelay: 450,
   },
-  { image: GithubLogo, alt: "GitHub", link: "https://github.com/abhash-rai/" },
+  {
+    image: GithubLogo,
+    alt: "GitHub",
+    link: "https://github.com/abhash-rai/",
+    aosDelay: 550,
+  },
   {
     image: KaggleLogo,
     alt: "Kaggle",
     link: "https://www.kaggle.com/abhashrai/",
+    aosDelay: 650,
   },
   {
     image: DatacampLogo,
     alt: "DataCamp",
     link: "https://www.datacamp.com/portfolio/abhash-rai/",
+    aosDelay: 750,
   },
 ];
 
@@ -36,7 +44,11 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar w-full h-full px-[50px] pt-24 pb-0 lg:py-24 lg:px-18 xl:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
-      <div className="flex-1 flex flex-col gap-3">
+      <div
+        data-aos="fade-right"
+        data-aos-delay={50}
+        className="flex-1 flex flex-col gap-3"
+      >
         <div
           className={`flex-1 flex justify-start items-center text-left ${main_title_classes}`}
         >
@@ -53,10 +65,17 @@ const Sidebar = () => {
           {short_job_description}
         </div>
       </div>
-      <div className="h-[35%] hidden lg:flex"></div>
+      <div
+        data-aos="fade-right"
+        data-aos-delay={250}
+        className="h-[35%] hidden lg:flex"
+      ></div>
       <div className={`h-[15%] flex flex-row items-center gap-3 opacity-60`}>
         {logos.map((logo, index) => (
           <a
+            data-aos="flip-up"
+            data-aos-delay={logo.aosDelay}
+            data-aos-duration={600}
             key={index}
             href={logo.link}
             target="_blank"
