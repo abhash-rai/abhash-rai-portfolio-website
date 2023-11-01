@@ -16,6 +16,10 @@
   /* border: 1px solid red; */
 }
 
+
+
+
+
 .sidebar_section_heading:hover .sidebar_section_heading_line {
   width: 60px;
   border-color: white;
@@ -31,6 +35,8 @@
   width: 60px;
   border-color: white;
 }
+
+
 
 
 @media (min-width: 1023px) { 

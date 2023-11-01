@@ -14,10 +14,10 @@ const StickyBoxComponent = () => {
 
   return (
     <div className="sticky_box w-full flex justify-start flex-col items-center lg:flex-row lg:justify-center lg:items-start">
-      <div className="w-[100vw] lg:w-[45vw] !relative lg:!sticky" ref={ref}>
+      <div className="w-[100vw] lg:w-[40vw] !relative lg:!sticky" ref={ref}>
         <Sidebar />
       </div>
-      <div className="content w-[100vw] py-24 px-[20px] lg:pl-0 lg:pr-10 xl:pl-8 xl:pr-20 lg:w-[55vw]">
+      <div className="content w-[100vw] py-24 px-[20px] lg:pl-20 lg:pr-10 xl:pl-28 xl:pr-20 lg:w-[60vw]">
         <ScrollSpy
           offsetBottom={20}
           scrollThrottle={100}

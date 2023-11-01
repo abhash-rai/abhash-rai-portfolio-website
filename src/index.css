@@ -5,18 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
-:root {
-  overflow: hidden;
-  height: 100%;
-}
 
 body {
-  position: relative;
-  overflow-y: scroll;
-  height: 100%;
   /* overflow-x: hidden!important; */
   background-color: #0F172A;
   color: white;
 }
-
-/* body>div {overflow-x:hidden;} */
