@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
           <div className="w-full sm:w-[70%] flex flex-col gap-4">
             <div
-              className={`${normal_classes} projects_titles text-left font-semibold text-white`}
+              className={`${normal_classes} projects_titles text-left text-white`}
             >
               {project.ProjectName}
             </div>
@@ -74,7 +74,7 @@ const Projects = () => {
               ))}
             </div>
             <div
-              className={`${normal_classes} p-2 bg-[#1c3751] shadow-md text-white font-semibold hover:scale-105 transition-all duration-300 ease-in-out`}
+              className={`${small_classes} p-2 bg-[#1c3751] shadow-md text-white hover:scale-105 transition-all duration-300 ease-in-out`}
             >
               <a
                 className="w-full h-full"

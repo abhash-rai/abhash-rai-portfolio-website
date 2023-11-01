@@ -5,7 +5,7 @@ import MainContext from "./Components/MainContext";
 
 function App() {
   const main_title_classes = "font-bold text-[40px] sm:text-5xl xl:text-5xl";
-  const headings_classes = "font-normal text-xl xl:text-2xl";
+  const headings_classes = "font-normal text-xl xl:text-[22px]";
   const normal_classes = "font-normal text-[17px]";
   const small_classes = "font-normal text-[15px]";
   const gray_color = "text-[#8092b5]";

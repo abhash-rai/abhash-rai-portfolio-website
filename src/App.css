@@ -19,6 +19,6 @@
 @media (min-width: 1023px) { 
   .experience_cards:hover .experience_titles, .projects_cards:hover .projects_titles {
     color: #45DBE2;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
  }

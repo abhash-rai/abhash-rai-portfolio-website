@@ -33,12 +33,12 @@ const Experience = () => {
           key={index}
           className={`${gray_color} experience_cards flex flex-col sm:flex-row gap-5 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
         >
-          <div className="w-full sm:w-[30%] text-left">
+          <div className="w-full sm:w-[30%] text-left text-[13px]">
             {experience.StartDate} — {experience.EndDate}
           </div>
           <div className="w-full sm:w-[70%] flex flex-col gap-4">
             <div
-              className={`${normal_classes} experience_titles text-left font-semibold text-white`}
+              className={`${normal_classes} experience_titles text-left text-white`}
             >
               {experience.JobTitle} • {experience.JobCompany}
             </div>

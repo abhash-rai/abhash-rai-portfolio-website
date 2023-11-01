@@ -35,7 +35,7 @@ const Sidebar = () => {
     useContext(MainContext);
 
   return (
-    <div className="sidebar w-full h-full px-[50px] pt-24 pb-0 lg:py-24 lg:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
+    <div className="sidebar w-full h-full px-[50px] pt-24 pb-0 lg:py-24 lg:px-18 xl:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
       <div className="flex-1 flex flex-col gap-3">
         <div
           className={`flex-1 flex justify-start items-center text-left ${main_title_classes}`}
