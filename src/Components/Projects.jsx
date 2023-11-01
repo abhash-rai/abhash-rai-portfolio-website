@@ -41,23 +41,23 @@ const projects = [
 const Projects = () => {
   const { normal_classes, small_classes, gray_color } = useContext(MainContext);
   return (
-    <div className={`${small_classes} flex flex-col gap-16 lg:gap-5`}>
+    <div className={`${small_classes} flex flex-col gap-6 lg:gap-5`}>
       <div className="text-left lg:hidden font-bold">PROJECTS</div>
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-5 box-border rounded-xl p-0 lg:p-6 lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
+          className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-5 lg:gap-8 box-border rounded-none lg:rounded-xl p-6 bg-[#1c283c46] lg:bg-transparent lg:hover:bg-[#1c283c46] lg:hover:shadow-md transition-all duration-300 ease-in-out`}
         >
-          <div className="w-full sm:w-[30%] text-[14px] text-left">
+          <div className="w-full sm:w-[30%] lg:w-[32%] xl:w-[27%] text-[14px] text-left">
             <img
               src={project.ProjectImage}
               alt={project.ProjectName}
-              className="w-full shadow-md border-[#242D3E] border-2 rounded-md"
+              className="w-full shadow-md border-[#242D3E] border-0 lg:border-2 rounded-md"
             />
           </div>
-          <div className="w-full sm:w-[70%] flex flex-col gap-4">
+          <div className="w-full sm:w-[70%] lg:w-[68%] xl:w-[73%] flex flex-col gap-4">
             <div
-              className={`${normal_classes} projects_titles text-left text-white`}
+              className={`${normal_classes} projects_titles text-left text-[#45DBE2] lg:text-white font-[500]`}
             >
               {project.ProjectName}
             </div>
@@ -77,7 +77,7 @@ const Projects = () => {
               className={`${small_classes} p-2 bg-[#1c3751] shadow-md text-white hover:scale-105 transition-all duration-300 ease-in-out`}
             >
               <a
-                className="w-full h-full"
+                className="w-full h-full font-[500]"
                 href={project.ProjectLink}
                 target="_blank"
                 rel="noopener noreferrer"

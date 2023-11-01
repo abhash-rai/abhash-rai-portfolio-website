@@ -43,7 +43,7 @@ const Sidebar = () => {
           {name}
         </div>
         <div
-          className={`flex-1 flex justify-start items-center text-left ${headings_classes}`}
+          className={`flex-1 flex justify-start items-center text-left ${headings_classes} font-[500]`}
         >
           {job_title}
         </div>

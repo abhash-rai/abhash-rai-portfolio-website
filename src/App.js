@@ -6,9 +6,9 @@ import MainContext from "./Components/MainContext";
 function App() {
   const main_title_classes = "font-bold text-[40px] sm:text-5xl xl:text-5xl";
   const headings_classes = "font-normal text-xl xl:text-[22px]";
-  const normal_classes = "font-normal text-[17px]";
+  const normal_classes = "font-normal text-[16px]";
   const small_classes = "font-normal text-[15px]";
-  const gray_color = "text-[#8092b5]";
+  const gray_color = "text-[#8c9dc0]";
   const text_hover_classes =
     "hover:text-[#45DBE2] transition-all duration-300 ease-in-out";
 
@@ -23,7 +23,7 @@ function App() {
         text_hover_classes,
       }}
     >
-      <div className="App container mx-auto h-[200vh]">
+      <div className="App container mx-auto h-[200vh] text-white opacity-90">
         <GradientCursor />
         <div className="h-full z-[1]">
           <StickyBoxComponent />
