@@ -27,7 +27,9 @@ const Experience = () => {
 
   return (
     <div className={`${small_classes} flex flex-col gap-6 lg:gap-5`}>
-      <div className="text-left lg:hidden font-bold">EXPERIENCE</div>
+      <div data-aos="fade-right" className="text-left lg:hidden font-bold">
+        EXPERIENCE
+      </div>
       {experiences.map((experience, index) => (
         <div
           data-aos="fade-left"
@@ -59,6 +61,7 @@ const Experience = () => {
         </div>
       ))}
       <a
+        data-aos="fade-left"
         href={MyResume}
         download
         className={`${normal_classes} flex justify-start items-center p-0 lg:px-6`}

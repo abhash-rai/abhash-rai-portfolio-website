@@ -42,7 +42,9 @@ const Projects = () => {
   const { normal_classes, small_classes, gray_color } = useContext(MainContext);
   return (
     <div className={`${small_classes} flex flex-col gap-6 lg:gap-5`}>
-      <div className="text-left lg:hidden font-bold">PROJECTS</div>
+      <div data-aos="fade-right" className="text-left lg:hidden font-bold">
+        PROJECTS
+      </div>
       {projects.map((project, index) => (
         <div
           data-aos="fade-left"
