@@ -22,13 +22,13 @@ const experiences = [
   },
 ];
 
-const Experience = () => {
+const Experience = ({ paddingTailwindValue }) => {
   const { normal_classes, small_classes, gray_color } = useContext(MainContext);
 
   return (
     <div
       id="experience"
-      className={`${small_classes} flex flex-col gap-6 lg:gap-5`}
+      className={`${small_classes} flex flex-col gap-6 lg:gap-5 ${paddingTailwindValue}`}
     >
       <div data-aos="fade-right" className="text-left lg:hidden font-bold">
         EXPERIENCE

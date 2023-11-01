@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import MainContext from "./MainContext";
 
-const AboutMe = () => {
+const AboutMe = ({ paddingTailwindValue }) => {
   const { normal_classes, gray_color, text_hover_classes } =
     useContext(MainContext);
   return (
@@ -9,7 +9,7 @@ const AboutMe = () => {
       data-aos="fade-up"
       data-aos-delay={950}
       id="about"
-      className={`${normal_classes} font-semibold flex flex-col gap-5`}
+      className={`${normal_classes} font-semibold flex flex-col gap-5 ${paddingTailwindValue}`}
     >
       <div className="text-left lg:hidden">ABOUT</div>
       <div

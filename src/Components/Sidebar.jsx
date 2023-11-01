@@ -7,10 +7,10 @@ import KaggleLogo from "../logos/kaggle.png";
 import LinkedinLogo from "../logos/linkedin.png";
 
 const pageSections = [
-  { sectionName: "ABOUT", sectionId: "#about" },
-  { sectionName: "BLOGS", sectionId: "#blogs" },
-  { sectionName: "EXPERIENCE", sectionId: "#experience" },
-  { sectionName: "PROJECTS", sectionId: "#projects" },
+  { sectionName: "ABOUT", sectionId: "about" },
+  { sectionName: "BLOGS", sectionId: "blogs" },
+  { sectionName: "EXPERIENCE", sectionId: "experience" },
+  { sectionName: "PROJECTS", sectionId: "projects" },
 ];
 
 const logos = [
@@ -85,7 +85,8 @@ const Sidebar = () => {
         {pageSections.map((section, index) => (
           <a
             key={index}
-            href={section.sectionId}
+            data-to-scrollspy-id={section.sectionId}
+            href={`#${section.sectionId}`}
             className="sidebar_section_heading flex flex-row items-center text-[13px] font-semibold transition-all duration-300 ease-in-out"
           >
             <span className="sidebar_section_heading_line flex w-[30px] border-b-[1px] border-[#8c9dc0] mr-4 transition-all duration-300 ease-in-out"></span>{" "}
