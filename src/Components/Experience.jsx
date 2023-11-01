@@ -30,13 +30,9 @@ const Experience = ({ paddingTailwindValue }) => {
       id="experience"
       className={`${small_classes} flex flex-col gap-6 lg:gap-5 ${paddingTailwindValue}`}
     >
-      <div data-aos="fade-right" className="text-left lg:hidden font-bold">
-        EXPERIENCE
-      </div>
+      <div className="text-left lg:hidden font-bold">EXPERIENCE</div>
       {experiences.map((experience, index) => (
         <div
-          data-aos="fade-left"
-          data-aos-offset={200}
           key={index}
           className={`${gray_color} experience_cards flex flex-col sm:flex-row gap-5 lg:gap-8 box-border rounded-none lg:rounded-xl p-6 bg-[#1c283c46] lg:bg-transparent lg:hover:bg-[#1c283c46] lg:hover:shadow-md hover:!scale-105 !transition-all !duration-300 !ease-in-out`}
         >
@@ -64,7 +60,6 @@ const Experience = ({ paddingTailwindValue }) => {
         </div>
       ))}
       <a
-        data-aos="fade-left"
         href={MyResume}
         download
         className={`${normal_classes} flex justify-start items-center p-0 lg:px-6`}

@@ -6,8 +6,6 @@ const AboutMe = ({ paddingTailwindValue }) => {
     useContext(MainContext);
   return (
     <div
-      data-aos="fade-up"
-      data-aos-delay={950}
       id="about"
       className={`${normal_classes} font-semibold flex flex-col gap-5 ${paddingTailwindValue}`}
     >

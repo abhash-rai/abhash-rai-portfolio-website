@@ -45,12 +45,9 @@ const Projects = () => {
       id="projects"
       className={`${small_classes} flex flex-col gap-6 lg:gap-5`}
     >
-      <div data-aos="fade-right" className="text-left lg:hidden font-bold">
-        PROJECTS
-      </div>
+      <div className="text-left lg:hidden font-bold">PROJECTS</div>
       {projects.map((project, index) => (
         <div
-          data-aos="fade-left"
           key={index}
           className={`${gray_color} projects_cards flex flex-col sm:flex-row gap-5 lg:gap-8 box-border rounded-none lg:rounded-xl p-6 bg-[#1c283c46] lg:bg-transparent lg:hover:bg-[#1c283c46] lg:hover:shadow-md hover:!scale-105 !transition-all !duration-300 !ease-in-out`}
         >

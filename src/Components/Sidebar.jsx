@@ -55,12 +55,8 @@ const Sidebar = () => {
   } = useContext(MainContext);
 
   return (
-    <div className="sidebar w-full h-full px-[50px] pt-24 pb-0 lg:py-24 lg:px-18 xl:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
-      <div
-        data-aos="fade-right"
-        data-aos-delay={50}
-        className="flex-1 flex flex-col gap-3"
-      >
+    <div className="sidebar w-full h-full px-[20px] pt-24 pb-0 lg:py-24 lg:px-18 xl:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
+      <div className="flex-1 flex flex-col gap-3">
         <div
           className={`flex-1 flex justify-start items-center text-left ${main_title_classes}`}
         >
@@ -78,8 +74,6 @@ const Sidebar = () => {
         </div>
       </div>
       <div
-        data-aos="fade-right"
-        data-aos-delay={250}
         className={`h-[35%] hidden lg:flex flex-col gap-3 items-start justify-center ${small_classes} ${gray_color}`}
       >
         {pageSections.map((section, index) => (
@@ -97,9 +91,6 @@ const Sidebar = () => {
       <div className={`h-[15%] flex flex-row items-center gap-3 opacity-60`}>
         {logos.map((logo, index) => (
           <a
-            data-aos="flip-up"
-            data-aos-delay={logo.aosDelay}
-            data-aos-duration={600}
             className="w-[30px] h-[30px]"
             key={index}
             href={logo.link}

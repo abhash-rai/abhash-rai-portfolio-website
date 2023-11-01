@@ -3,15 +3,7 @@ import GradientCursor from "./Components/GradientCursor";
 import StickyBoxComponent from "./Components/StickyBoxComponent";
 import MainContext from "./Components/MainContext";
 
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS CSS for animations
-import { useEffect } from "react";
-
 function App() {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
-
   const main_title_classes = "font-bold text-[40px] sm:text-5xl xl:text-5xl";
   const headings_classes = "font-normal text-xl xl:text-[22px]";
   const normal_classes = "font-normal text-[16px]";
@@ -31,7 +23,7 @@ function App() {
         text_hover_classes,
       }}
     >
-      <div className="App container mx-auto h-[200vh] text-white opacity-90">
+      <div className="App w-full container mx-auto h-[200vh] text-white opacity-90">
         <GradientCursor />
         <div className="h-full z-[1]">
           <StickyBoxComponent />

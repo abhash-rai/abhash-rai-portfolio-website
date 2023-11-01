@@ -9,7 +9,7 @@
 }
 
 .App {
-  /* overflow: hidden!important; */
+  /* overflow-x:; */
 }
 
 .sticky_box div, .content div {
