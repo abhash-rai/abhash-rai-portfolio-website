@@ -85,7 +85,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View on {project.ProjectLinkPlatform}
+                View on {project.ProjectLinkPlatform} ⭷
               </a>
             </div>
           </div>
