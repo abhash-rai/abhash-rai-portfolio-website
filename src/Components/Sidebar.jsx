@@ -6,6 +6,13 @@ import GithubLogo from "../logos/github.png";
 import KaggleLogo from "../logos/kaggle.png";
 import LinkedinLogo from "../logos/linkedin.png";
 
+const pageSections = [
+  { sectionName: "ABOUT", sectionId: "#about" },
+  { sectionName: "BLOGS", sectionId: "#blogs" },
+  { sectionName: "EXPERIENCE", sectionId: "#experience" },
+  { sectionName: "PROJECTS", sectionId: "#projects" },
+];
+
 const logos = [
   {
     image: LinkedinLogo,
@@ -39,8 +46,13 @@ const short_job_description =
   "I turn data into actionable insights using machine learning and analytical tools.";
 
 const Sidebar = () => {
-  const { main_title_classes, headings_classes, normal_classes, gray_color } =
-    useContext(MainContext);
+  const {
+    main_title_classes,
+    headings_classes,
+    normal_classes,
+    small_classes,
+    gray_color,
+  } = useContext(MainContext);
 
   return (
     <div className="sidebar w-full h-full px-[50px] pt-24 pb-0 lg:py-24 lg:px-18 xl:px-20 max-w-[500px] lg:max-w-full lg:h-[100vh] lg:sticky flex flex-col gap-12">
@@ -68,8 +80,19 @@ const Sidebar = () => {
       <div
         data-aos="fade-right"
         data-aos-delay={250}
-        className="h-[35%] hidden lg:flex"
-      ></div>
+        className={`h-[35%] hidden lg:flex flex-col gap-3 items-start justify-center ${small_classes} ${gray_color}`}
+      >
+        {pageSections.map((section, index) => (
+          <a
+            key={index}
+            href={section.sectionId}
+            className="sidebar_section_heading flex flex-row items-center text-[13px] font-semibold transition-all duration-300 ease-in-out"
+          >
+            <span className="sidebar_section_heading_line flex w-[30px] border-b-[1px] border-[#8c9dc0] mr-4 transition-all duration-300 ease-in-out"></span>{" "}
+            {section.sectionName}
+          </a>
+        ))}
+      </div>
       <div className={`h-[15%] flex flex-row items-center gap-3 opacity-60`}>
         {logos.map((logo, index) => (
           <a

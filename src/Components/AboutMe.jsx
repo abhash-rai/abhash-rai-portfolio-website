@@ -8,6 +8,7 @@ const AboutMe = () => {
     <div
       data-aos="fade-up"
       data-aos-delay={950}
+      id="about"
       className={`${normal_classes} font-semibold flex flex-col gap-5`}
     >
       <div className="text-left lg:hidden">ABOUT</div>
