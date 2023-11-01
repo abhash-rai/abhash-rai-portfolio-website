@@ -66,7 +66,7 @@ const Experience = () => {
         download
         className={`${normal_classes} flex justify-start items-center p-0 lg:px-6`}
       >
-        <button>
+        <button className="hover:text-[#45DBE2] transition-all duration-300 ease-in-out">
           <span>Download My Resume</span> →
         </button>
       </a>

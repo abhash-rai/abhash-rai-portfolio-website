@@ -76,6 +76,7 @@ const Sidebar = () => {
             data-aos="flip-up"
             data-aos-delay={logo.aosDelay}
             data-aos-duration={600}
+            className="w-[30px] h-[30px]"
             key={index}
             href={logo.link}
             target="_blank"
@@ -84,8 +85,7 @@ const Sidebar = () => {
             <img
               key={index}
               src={logo.image}
-              width={30}
-              height={30}
+              className="w-full h-full hover:scale-125 transition-all duration-300 ease-in-out"
               alt={logo.alt}
               title={logo.alt}
             />
