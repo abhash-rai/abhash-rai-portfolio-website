@@ -24,18 +24,9 @@
   color: white;
 }
 
-/* .active-scroll-spy {
-  color: white;
-  .sidebar_section_heading_line {
-    width: 60px;
-    border-color: white;
-  }
-} */
-
 .active-scroll-spy {
   color: white;
 }
-
 .active-scroll-spy .sidebar_section_heading_line {
   width: 60px;
   border-color: white;
