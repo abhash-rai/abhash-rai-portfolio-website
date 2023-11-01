@@ -24,9 +24,9 @@ const StickyBoxComponent = () => {
           useBoxMethod={true}
           defaultSection="#about"
         >
-          <AboutMe paddingTailwindValue="mb-32" />
-          <Experience paddingTailwindValue="mb-32" />
-          <Projects paddingTailwindValue="mb-32" />
+          <AboutMe paddingTailwindValue="pt-10 lg:pt-0 mb-40" />
+          <Experience paddingTailwindValue="mb-40" />
+          <Projects paddingTailwindValue="mb-40" />
         </ScrollSpy>
       </div>
     </div>
