@@ -38,7 +38,7 @@ const Experience = ({ paddingTailwindValue }) => {
           data-aos="fade-left"
           data-aos-offset={200}
           key={index}
-          className={`${gray_color} experience_cards flex flex-col sm:flex-row gap-5 lg:gap-8 box-border rounded-none lg:rounded-xl p-6 bg-[#1c283c46] lg:bg-transparent lg:hover:bg-[#1c283c46] lg:hover:shadow-md !transition-all !duration-300 !ease-in-out`}
+          className={`${gray_color} experience_cards flex flex-col sm:flex-row gap-5 lg:gap-8 box-border rounded-none lg:rounded-xl p-6 bg-[#1c283c46] lg:bg-transparent lg:hover:bg-[#1c283c46] lg:hover:shadow-md hover:!scale-105 !transition-all !duration-300 !ease-in-out`}
         >
           <div className="w-full sm:w-[30%] lg:w-[32%] xl:w-[27%] text-left text-[13px]">
             {experience.StartDate} — {experience.EndDate}
