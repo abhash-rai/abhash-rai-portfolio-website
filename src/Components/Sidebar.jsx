@@ -96,7 +96,7 @@ const Sidebar = () => {
           </a>
         ))}
       </div>
-      <div className={`h-[15%] flex flex-row items-center gap-3 opacity-60`}>
+      <div className={`h-[15%] flex flex-row items-center gap-3`}>
         {logos.map((logo, index) => (
           <a
             className="w-[30px] h-[30px]"
@@ -108,7 +108,7 @@ const Sidebar = () => {
             <img
               key={index}
               src={logo.image}
-              className="w-full h-full hover:scale-125 transition-all duration-300 ease-in-out"
+              className="w-full h-full opacity-60 hover:opacity-90 hover:scale-125 transition-all duration-300 ease-in-out"
               alt={logo.alt}
               title={logo.alt}
             />

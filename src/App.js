@@ -23,7 +23,7 @@ function App() {
         text_hover_classes,
       }}
     >
-      <div className="App w-full container mx-auto h-[200vh] text-white opacity-90">
+      <div className="App w-full container mx-auto h-[200vh] text-white">
         <GradientCursor />
         <div className="h-full z-[1]">
           <StickyBoxComponent />
