@@ -19,7 +19,7 @@ const StickyBoxComponent = () => {
       <div className="w-[100vw] lg:w-[40vw] !relative lg:!sticky" ref={ref}>
         <Sidebar />
       </div>
-      <div className="content w-[100vw] py-24 px-[20px] lg:pl-20 lg:pr-10 xl:pl-28 xl:pr-20 lg:w-[60vw]">
+      <div className="content w-[100vw] py-24 px-[20px] md:px-28 lg:pl-20 lg:pr-10 xl:pl-28 xl:pr-20 lg:w-[60vw]">
         <ScrollSpy
           offsetBottom={20}
           scrollThrottle={100}
