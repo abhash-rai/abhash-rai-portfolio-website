@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import ScrollSpy from "react-ui-scrollspy";
+import Blogs from "./Blogs";
 
 const StickyBoxComponent = () => {
   const ref = useStickyBox({
@@ -25,6 +26,7 @@ const StickyBoxComponent = () => {
           defaultSection="#about"
         >
           <AboutMe paddingTailwindValue="pt-10 lg:pt-0 mb-40" />
+          <Blogs paddingTailwindValue="mb-40" />
           <Experience paddingTailwindValue="mb-40" />
           <Projects paddingTailwindValue="mb-40" />
         </ScrollSpy>

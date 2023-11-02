@@ -77,7 +77,7 @@ const Projects = () => {
               ))}
             </div>
             <div
-              className={`${small_classes} p-2 bg-[#1c3751] shadow-md text-white hover:scale-105 transition-all duration-300 ease-in-out`}
+              className={`${small_classes} p-2 bg-[#45DBE2] text-black shadow-md hover:scale-105 transition-all duration-300 ease-in-out`}
             >
               <a
                 className="w-full h-full font-[500]"
