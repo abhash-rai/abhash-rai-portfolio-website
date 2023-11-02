@@ -7,7 +7,7 @@ function App() {
   const main_title_classes = "font-bold text-[40px] sm:text-5xl xl:text-5xl";
   const headings_classes = "font-normal text-xl xl:text-[22px]";
   const normal_classes = "font-normal text-[16px]";
-  const small_classes = "font-normal text-[15px]";
+  const small_classes = "font-normal text-[14px]";
   const gray_color = "text-[#8c9dc0]";
   const text_hover_classes =
     "hover:text-[#45DBE2] transition-all duration-300 ease-in-out";
