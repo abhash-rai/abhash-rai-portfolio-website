@@ -41,7 +41,7 @@
 
 
 @media (min-width: 1023px) { 
-  .experience_cards:hover .experience_titles, .projects_cards:hover .projects_titles, .awards_cards:hover .award_titles {
+  .experience_cards:hover .experience_titles, .projects_cards:hover .projects_titles, .awards_cards:hover .award_titles, .blog_cards:hover .blog_titles {
     color: #45DBE2;
     opacity: 100;
   }
