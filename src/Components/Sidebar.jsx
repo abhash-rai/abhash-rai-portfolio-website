@@ -12,6 +12,7 @@ const pageSections = [
   { sectionName: "BLOGS", sectionId: "blogs" },
   { sectionName: "EXPERIENCE", sectionId: "experience" },
   { sectionName: "PROJECTS", sectionId: "projects" },
+  { sectionName: "AWARDS", sectionId: "awards" },
 ];
 
 const logos = [

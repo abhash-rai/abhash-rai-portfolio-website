@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import ScrollSpy from "react-ui-scrollspy";
 import Blogs from "./Blogs";
+import Awards from "./Awards";
 
 const StickyBoxComponent = () => {
   const ref = useStickyBox({
@@ -29,6 +30,7 @@ const StickyBoxComponent = () => {
           <Blogs paddingTailwindValue="mb-40" />
           <Experience paddingTailwindValue="mb-40" />
           <Projects paddingTailwindValue="mb-40" />
+          <Awards />
         </ScrollSpy>
       </div>
     </div>

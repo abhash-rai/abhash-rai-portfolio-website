@@ -38,12 +38,12 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ paddingTailwindValue }) => {
   const { normal_classes, small_classes, gray_color } = useContext(MainContext);
   return (
     <div
       id="projects"
-      className={`${small_classes} flex flex-col gap-6 lg:gap-5`}
+      className={`${small_classes} flex flex-col gap-6 lg:gap-5 ${paddingTailwindValue}`}
     >
       <div className="text-left lg:hidden font-bold">PROJECTS</div>
       {projects.map((project, index) => (
