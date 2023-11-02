@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import MainContext from "./MainContext";
 
+import MediumLogo from "../logos/medium.png";
 import DatacampLogo from "../logos/datacamp.png";
 import GithubLogo from "../logos/github.png";
 import KaggleLogo from "../logos/kaggle.png";
@@ -15,28 +16,34 @@ const pageSections = [
 
 const logos = [
   {
+    image: MediumLogo,
+    alt: "Medium",
+    link: "https://medium.com/@abhash-rai",
+    aosDelay: 450,
+  },
+  {
     image: LinkedinLogo,
     alt: "LinkedIn",
     link: "https://www.linkedin.com/in/abhash-rai/",
-    aosDelay: 450,
+    aosDelay: 550,
   },
   {
     image: GithubLogo,
     alt: "GitHub",
     link: "https://github.com/abhash-rai/",
-    aosDelay: 550,
+    aosDelay: 650,
   },
   {
     image: KaggleLogo,
     alt: "Kaggle",
     link: "https://www.kaggle.com/abhashrai/",
-    aosDelay: 650,
+    aosDelay: 750,
   },
   {
     image: DatacampLogo,
     alt: "DataCamp",
     link: "https://www.datacamp.com/portfolio/abhash-rai/",
-    aosDelay: 750,
+    aosDelay: 850,
   },
 ];
 
