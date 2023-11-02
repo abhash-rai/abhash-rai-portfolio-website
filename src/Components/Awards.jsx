@@ -36,7 +36,9 @@ const Awards = ({ paddingTailwindValue }) => {
       id="awards"
       className={`${small_classes} flex flex-col gap-6 lg:gap-5 ${paddingTailwindValue}`}
     >
-      <div className="text-left lg:hidden font-bold">EXPERIENCE</div>
+      <div className={`${normal_classes} p-0 lg:px-6 text-left font-[800]`}>
+        AWARDS
+      </div>
       {awards.map((award, index) => (
         <a
           href={award.link}

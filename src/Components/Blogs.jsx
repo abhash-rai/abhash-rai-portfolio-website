@@ -26,7 +26,9 @@ const Blogs = ({ paddingTailwindValue }) => {
       id="blogs"
       className={`${small_classes} flex flex-col gap-6 lg:gap-5 ${paddingTailwindValue}`}
     >
-      <div className="text-left lg:hidden font-bold">BLOGS</div>
+      <div className={`${normal_classes} p-0 lg:px-6 text-left font-[800]`}>
+        BLOGS
+      </div>
       {blogs.map((blog, index) => (
         <div
           key={index}
@@ -63,7 +65,7 @@ const Blogs = ({ paddingTailwindValue }) => {
             </div>
             <div className="text-left">{blog.blogDescription}</div>
             <div
-              className={`${small_classes} p-2 bg-[#45DBE2] text-black shadow-md text-white hover:scale-105 transition-all duration-300 ease-in-out`}
+              className={`${small_classes} p-2 bg-[#45DBE2] text-black shadow-md hover:scale-105 transition-all duration-300 ease-in-out`}
             >
               <a
                 className="w-full h-full font-[500]"

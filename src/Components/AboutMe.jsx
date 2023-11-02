@@ -9,7 +9,7 @@ const AboutMe = ({ paddingTailwindValue }) => {
       id="about"
       className={`${normal_classes} font-semibold flex flex-col gap-5 ${paddingTailwindValue}`}
     >
-      <div className="text-left lg:hidden">ABOUT</div>
+      <div className="text-left lg:hidden font-[800]">ABOUT</div>
       <div
         className={`${normal_classes} ${gray_color} flex flex-col gap-5 p-0 lg:px-5`}
       >
