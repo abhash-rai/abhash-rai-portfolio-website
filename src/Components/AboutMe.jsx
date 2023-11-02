@@ -1,18 +1,21 @@
 import { useContext } from "react";
 import MainContext from "./MainContext";
 
+import portaitPicture from "../Display_picture/portrait.jpg";
+
 const AboutMe = ({ paddingTailwindValue }) => {
   const { normal_classes, gray_color, text_hover_classes } =
     useContext(MainContext);
   return (
     <div
       id="about"
-      className={`${normal_classes} font-semibold flex flex-col gap-5 ${paddingTailwindValue}`}
+      className={`${normal_classes} font-semibold flex flex-col gap-5 ${paddingTailwindValue} p-0 lg:px-5`}
     >
       <div className="text-left lg:hidden font-[800]">ABOUT</div>
-      <div
-        className={`${normal_classes} ${gray_color} flex flex-col gap-5 p-0 lg:px-5`}
-      >
+      <div className="">
+        <img className="shadow-lg" src={portaitPicture} alt="Portait Picture" />
+      </div>
+      <div className={`${normal_classes} ${gray_color} flex flex-col gap-5`}>
         <p className="text-left">
           In retrospect, 2021 marked the start of my journey in data science. It
           all started with learning Python. The prospect of machine learning to
