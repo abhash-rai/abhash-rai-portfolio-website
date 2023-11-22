@@ -11,7 +11,7 @@ const awards = [
       "Received 1st runner-up award at the 2023 Ideathon, 'Empowering Nepal's Green Revolution: AI for Sustainable Agriculture' hosted by Sunway College Kathmandu. My team presented a data-driven and machine learning-based consultancy service that involves building a model which takes in factors such as nutrient levels, pH, organic matter content, texture, etc and predicts best suited crops for a given soil sample.",
   },
   {
-    link: "https://drive.google.com/file/d/1Gsa2Gy_-Pdt3WKq-UT0GByO0Cfagna9c/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1oIR5RbLknWfGTZriR2CgGDMYM_QacdYc/view?usp=sharing",
     title: "Young Scientist Award",
     issuedBy: "Brainycube Research Organization",
     issueDate: "Jul 2023",
