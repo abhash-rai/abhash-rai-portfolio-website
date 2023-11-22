@@ -9,7 +9,7 @@ const projects = [
     ProjectImage: TrafficImageClassifier,
     ProjectName: "Traffic Image Classifier",
     ProjectDescription:
-      "A web-based solution for precise traffic condition classification, leveraging machine learning techniques, including Convolutional Neural Network and Transfer Learning (Xception), delivering 95% accuracy in discerning traffic scenarios.  It encompasses a comprehensive workflow, from Data Collection (Manual, Web Scrapping), EDA, Data Augmentation, Model Training (ML Algorithms, CNN, Transfer Learning), Hyperparameter Tuning, Model Validation, and Deployment (UI Design, React and FastAPI).",
+      "A web-based solution utilizing a robust tensorflow model for precise traffic condition classification made in ReactJs and FastAPI for backend. It encompasses a comprehensive workflow, from Data Collection (Manual, Web Scrapping), EDA, Data Augmentation, Model Training (ML Algorithms, CNN, Transfer Learning), Hyperparameter Tuning, Model Validation, and Deployment (UI Design, React and FastAPI).",
     TechnologiesUsed: [
       "Python",
       "Keras (Tensorflow)",
@@ -23,7 +23,7 @@ const projects = [
       "HTML",
       "CSS",
     ],
-    ProjectLink: "https://github.com/abhash-rai/",
+    ProjectLink: "https://github.com/abhash-rai/traffic-image-classifier",
     ProjectLinkPlatform: "Github",
   },
   {
