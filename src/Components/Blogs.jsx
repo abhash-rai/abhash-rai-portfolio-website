@@ -2,7 +2,8 @@ import { useContext } from "react";
 import MainContext from "./MainContext";
 
 import calenderIcon from "../Icons/calendar.png";
-import PoissonProcessBanner from "../Blogs_banners/poisson.jpg";
+import PoissonProcessBanner from "../Blogs_banners/Poisson.jpg";
+import PandasVsPolars from "../Blogs_banners/PandasVsPolars.jpg";
 
 const blogs = [
   {
@@ -15,6 +16,17 @@ const blogs = [
     blogTitle: "Poisson Process Simulation and Analysis in Python",
     blogDescription:
       "Suppose, a website owner keeps a record of the timestamps of user arrivals. He wants to know when the next visitor is likely to visit his site. So you need a handy tool that can count events (user arrival), but...",
+  },
+  {
+    blogLink:
+      "https://medium.com/@abhash-rai/proving-polars-is-faster-than-pandas-in-python-f6f8c9425485",
+    blogPlatform: "Medium",
+    blogReadingTime: "4 min read",
+    blogBanner: PandasVsPolars,
+    blogDate: "November 22, 2023",
+    blogTitle: "Proving Polars is faster than Pandas in Python",
+    blogDescription:
+      "If you’re familiar with Python DataFrames, then you’ve likely come across Pandas. For those keeping abreast of the latest developments, Polars is the emerging player in this domain. Pandas is one of the most...",
   },
 ];
 

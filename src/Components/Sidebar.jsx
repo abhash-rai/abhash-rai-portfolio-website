@@ -51,7 +51,7 @@ const logos = [
 const name = "Abhash Rai";
 const job_title = "Research Intern at Sunway College";
 const short_job_description =
-  "I turn data into actionable insights using machine learning and analytical tools.";
+  "I turn data into insights using analytical tools and machine learning.";
 
 const Sidebar = () => {
   const {
