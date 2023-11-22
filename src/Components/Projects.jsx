@@ -93,6 +93,28 @@ const Projects = ({ paddingTailwindValue }) => {
           </div>
         </div>
       ))}
+      <div
+        className={`${normal_classes} flex justify-start items-center p-0 lg:px-6`}
+      >
+        View All Projects on{" "}
+        <a
+          href="https://www.kaggle.com/abhashrai/code"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-2 underline underline-offset-2 hover:text-[#45DBE2] transition-all duration-300 ease-in-out"
+        >
+          Kaggle↗
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://github.com/abhash-rai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-2 underline underline-offset-2 hover:text-[#45DBE2] transition-all duration-300 ease-in-out"
+        >
+          Github↗
+        </a>
+      </div>
     </div>
   );
 };
